@@ -1,34 +1,18 @@
-/* Main window container *\
+/* 1. Make the main window transparent to remove sharp system borders */
 window {
-    margin: 0px;
-    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+/* 2. This is the container that will hold your rounded shape */
+#outer-box {
     background-color: #1e1e2e;
     border: 2px solid #bd93f9;
     border-radius: 20px;
+    padding: 10px;
 }
 
-/* Ensure the background covers the rounded area */
-* {
-    background: transparent;
-}
-
-#outer-box {
-    margin: 0px;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: #1e1e2e;
-}
-
-
-
-/* Forces the content to stay within the rounded window */
-#outer-box {
-    margin: 0px;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: #1e1e2e;
-}
-
+/* 3. Style the input area */
 #input {
     margin: 5px;
     padding: 8px 12px;
@@ -38,6 +22,7 @@ window {
     color: #cdd6f4;
 }
 
+/* 4. Style the entries */
 #entry {
     background-color: transparent;
     padding: 6px;
