@@ -4,8 +4,10 @@ window {
     padding: 10px;
     background-color: #1e1e2e;
     border: 2px solid #bd93f9;
-    border-radius: 20px; /* Adjust this value for more/less roundness */
+    border-radius: 20px;
+    outline: none; /* This helps ensure the border follows the radius */
 }
+
 
 /* Forces the content to stay within the rounded window */
 #outer-box {
