@@ -1,12 +1,24 @@
-/* Main window container */
+/* Main window container *\
 window {
     margin: 0px;
     padding: 10px;
     background-color: #1e1e2e;
     border: 2px solid #bd93f9;
     border-radius: 20px;
-    outline: none; /* This helps ensure the border follows the radius */
 }
+
+/* Ensure the background covers the rounded area */
+* {
+    background: transparent;
+}
+
+#outer-box {
+    margin: 0px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #1e1e2e;
+}
+
 
 
 /* Forces the content to stay within the rounded window */
